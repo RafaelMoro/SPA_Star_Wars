@@ -1,0 +1,21 @@
+{
+  "name": "spa_star_wars",
+  "version": "1.0.0",
+  "description": "Consuming Star wars API swapi with React",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SPA",
+    "React",
+    "Webpack",
+    "SASS"
+  ],
+  "author": "Rafael Moro <rafael.moro.galindo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
