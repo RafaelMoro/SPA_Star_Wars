@@ -1,9 +1,19 @@
 import React from 'react'
+import { fetchData, fetchDataPromises } from '../api/fetchData';
 import '@styles/global.scss'
-import { useInitialState } from '../hooks/useInitialState';
 
 const App = () => {
-    const state = useInitialState()
+    React.useEffect(() => {
+        async function getData() {
+            try {
+                const data = await fetchData()
+                console.log(data)
+            } catch (error) {
+                console.error('Get Data error', error)
+            }
+        }
+        getData()
+    }, [])
     return (
         <h1>Hola</h1>
     );
